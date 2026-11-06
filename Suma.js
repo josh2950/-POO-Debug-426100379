@@ -1,9 +1,7 @@
 class Matematicas {
-  static sumar(a, b) {
+  sumar(a, b) { //static
     return a + b;
   }
 }
-
 const obj = new Matematicas();
-
-console.log(obj.sumar(5, 3));
+console.log(obj.sumar(5, 3)); 
