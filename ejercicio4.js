@@ -4,11 +4,11 @@ class Usuario {
   }
 
   saludar() {
-    console.log(`Hola, soy ${this.nombre}`);
+    console.log("Hola, soy " + this.nombre)
   }
 }
 
 const user = new Usuario("Ana");
-const miFuncionSaludar = user.saludar;
+const miFuncionSaludar = user.saludar.bind(user);
 
 miFuncionSaludar();
